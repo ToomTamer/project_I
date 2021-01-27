@@ -1,0 +1,200 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.navi-bar
+{
+    display: flex;
+    width: 100%;
+    height: 54px;
+    background-color: #282828;
+}
+.topbox
+{   
+    display: flex;
+    width: 90vw;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+.topp
+{
+    display: inline-block;
+    margin-top: 99px;
+    width: 90vw;
+    height: 35vw;
+    background-color: #e3f1f6;
+    border-radius: 1.5vw;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+@font-face
+{
+    font-family: nameproject;
+    src: url(font/OpenSans-Bold.ttf);
+}
+@font-face
+{
+    font-family: name;
+    src: url(font/OpenSans-Light.ttf);
+}
+
+.gridbox
+{
+    margin-top: 3vw;
+    margin-bottom: 1vw;
+    display: flexbox;
+    width: 90vw;
+    height: fit-content;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+
+.grid-container {
+    display: grid;
+    width: 90vw;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns:  auto auto auto  ;
+    grid-template-rows:  auto auto auto auto ;
+    grid-gap:  0.8vw;
+}
+
+.grid1 
+{
+    display: flex;
+    grid-column: 1;
+    grid-row: 1 / span 2 ;
+    width: 35vw;
+    height: 53vw;
+    position: relative;
+}
+
+.grid2 {
+   display: flex;
+    width: 26.5vw;
+    height:26vw;
+    position: relative;
+    
+}
+
+.grid3{
+    display: flex;
+    width: 26.5vw;
+    height: 54.5vw;
+    grid-row: 2 / span 2;
+    grid-column: 3;
+    position: relative;
+}
+
+.grid4{
+    display: flex;
+    grid-column: 1 / span 2;
+    grid-row: 3 ;
+    height: 27.55vw;
+    position: relative;
+}
+
+
+.img-grid
+{
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    
+
+}
+
+.img-branner{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 1.5vw;
+    position: relative;
+}
+.grid1:hover{
+    cursor: pointer;
+
+}
+
+.grid2:hover{
+    cursor: pointer;
+
+}
+
+.grid3:hover{
+    cursor: pointer;
+}
+
+.grid4:hover{
+    cursor: pointer;
+}
+
+.cap-bg {
+    
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0%;
+    transition: .5s ease;
+    background-color:  rgb(41, 41, 41,0.5);
+}
+
+ .cap-bg:hover{
+     opacity: 100%;
+ }
+  .text1 {
+    display: flex;
+    color: #ffffff;
+    font-size: 2.5vw;
+    font-family: nameproject;
+     position: absolute;
+     margin-right: 2vw;
+     margin-bottom: 4vw;
+     right: 0%;
+    opacity: 100%;
+    bottom: 0;
+    text-align: right;
+    
+  }
+
+  .text2 {
+    display: flex;
+    color: #ffffff;
+    font-size: 1.5vw;
+    font-family: name;
+     position: absolute;
+     margin-right: 2vw;
+     margin-bottom: 2vw;
+     right: 0%;
+    opacity: 100%;
+    bottom: 0;
+    text-align: right;
+    
+  }
+
+  .textbd{
+      
+    color: #ffffff;
+    font-size: 6vw;
+    font-family: nameproject;
+    position: absolute;
+    filter: opacity(75%);
+    text-align:center;
+    margin: 0;
+    width: 90vw;
+    margin-top: 12.5vw;
+    z-index: 3;
+  }
+ 

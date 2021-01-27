@@ -1,0 +1,41 @@
+@font-face
+{
+    font-family: rabold;
+    src: url(font/Raleway-Bold.ttf);
+}
+@font-face
+{
+    font-family: osl;
+    src: url(font/OpenSans-Light.ttf);
+}
+@font-face
+{
+    font-family: osb;
+    src: url(font/OpenSans-Bold.ttf);
+}
+@font-face
+{
+    font-family: osr;
+    src: url(font/OpenSans-Regular.ttf);
+}
+@font-face
+{
+    font-family: cb;
+    src: url(font/Cloud-Bold.otf);
+}
+@font-face
+{
+    font-family: ave;
+    src: url(font/FontsFree-Net-AvenirLTStd-Book.ttf);
+}
+@font-face
+{
+    font-family: cl;
+    src: url(font/Cloud-Light.otf);
+}
+@font-face
+{
+    font-family: ossb;
+    src: url(font/OpenSans-SemiBold.ttf);
+}
+

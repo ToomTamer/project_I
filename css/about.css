@@ -1,0 +1,117 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: var(--bw);
+}
+.boxheadband
+{
+    margin-left:auto;
+    margin-right: auto;
+    width: 100%;
+    height: 85vh;
+    object-position: center;
+}
+.textband1{
+    left: 25%;
+    top: 39%;
+    font-family:osb;
+    font-size: 4vw;
+    color: #ffffff;
+    position: absolute;
+    filter: opacity(70%);
+}
+.textband2{
+    top: 45%;
+    left: 30%;
+    font-family:rabold;
+    font-size: 10vw;
+    color: #ffffff;
+    position: absolute;
+}
+
+.boxtable
+{
+    margin-top: 45px;
+    margin-left:auto;
+    margin-right: auto;
+    width: fit-content;
+    height: fit-content;
+}
+.boxfooter
+{
+    margin-left:auto;
+    margin-right: auto;
+    width: fit-content;
+    height: fit-content;
+    width:100vw;
+
+}
+
+.headband
+    {
+        background-image: url(img/about3.png);
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-position-y: -100px ;
+    }
+.img_pro
+    {
+        display:block;
+        width:300px;
+        height:300px;
+        border-radius: 50%;
+    }
+.img_pro:hover
+    {
+        box-shadow :   0 0 20px #e3f1f6;
+        cursor:pointer;
+    }
+table
+    {
+        height: fit-content;
+        margin:auto;
+        margin-top:auto;
+        margin-left:auto;
+        margin-right:auto;
+    }
+h1
+    {
+        color:#ec400a;
+        font-size:20px;
+        font-family: ave;            
+        margin:auto;
+        margin-top:30px;
+        text-align:center;
+    }
+h2
+    {
+        color:#2188b9;
+        font-size:20px;
+        font-family: ave;  
+        margin-top: 10px;
+        text-align:center;
+    }
+td
+    {
+        text-align:center;
+        padding: 45px;
+    }
+
+@media screen and (max-width: 900px)
+{
+    td { display: block; }
+
+    .textband1{
+        top: 38%;
+        left: 27%;
+        font-size: 8vw;
+    }
+    .textband2{
+        left: 5%;
+        font-size: 20vw;
+    }
+}

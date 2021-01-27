@@ -1,0 +1,445 @@
+button{
+    outline: none;
+  }
+body{
+    margin: 0px;
+    padding: 0px;
+    user-select: none;
+
+}
+body{
+    background-color: var(--bw);
+}
+
+/*BANNER WASANN*/
+.bannerWasann{
+    width: 100%;
+    height: 75vh;
+    min-height: 540px;
+    overflow: hidden; 
+}
+.BGBanner{
+    width: 100%;
+    height: 100%;
+    background-image: url(img/BIndex3.jpg); 
+    background-position: right;
+    background-size: cover;
+    background-attachment: fixed;
+    filter: opacity(70%);
+
+}
+.BGbase{
+    width: 100%;
+    height: 100%;
+    background-color: #282828;
+}
+
+.bannerWasann p{
+    position: absolute;
+    font-family:osb ;
+    font-size: 100px;
+    margin-left: 8%;
+    margin-top: 150px;
+    color: #ffffff;
+    z-index: 1;
+    filter: opacity(80%);
+}
+
+/*BANNER WELCOME*/
+.banner-welcome{
+    margin-top: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90vw;
+    height: auto;
+    background-color: #2188b9;
+    border-radius: 1.5vw;
+    position: relative;
+    overflow: hidden;
+
+
+
+}
+
+.head-w{
+    font-family: osb;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    color: #e3f1f6;
+    letter-spacing: 1px;
+
+    
+}
+
+
+.text-welcome p:nth-child(2){
+    font-family: cl;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    padding: 0px 30px 30px 30px;
+    margin-top: -20px;
+    line-height: 1.8;
+    text-overflow: ellipsis;
+
+}
+
+/* WHAT WE DO*/
+.banner-whatwedo{
+    margin-top: 45px;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+ 
+}
+.BGwhatwedo{
+
+    width: 100%;
+    height: 500px;
+    background-color: #e3f1f6;
+    z-index: -2;
+    object-fit: cover;
+}
+.banner-whatwedo .BGwhatwedo img{
+    width: 100%;
+    height: 100%;
+    filter: opacity(30%);
+     object-fit: cover;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #ec400a;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.6s ease;
+    /*border-radius: 0 3px 3px 0;*/
+    user-select: none;
+    z-index: 7;
+  }
+  .next {
+    right: 10px;
+    width: 35px;
+    border-radius: 50%;
+    text-align: center;
+    background:rgb(33, 136, 185, 0.5);
+  }
+
+  .prev {
+    left:  10px;
+    width: 35px;
+    border-radius: 50%;
+    text-align: center;
+    background:rgb(33, 136, 185, 0.5);
+  }
+  .prev:hover, .next:hover {
+    background:rgb(33, 136, 185);
+    color: #ffffff;
+  }
+  
+.ConDeWhat{
+    width: 90vw;
+    height: 500px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.text-whatwedo{
+    width: 600px;
+    height: auto;
+    position: absolute;
+    top: 40%;
+    left: 15%;
+
+    z-index: -1;
+}
+
+
+.AniO-text-whatwedo{
+    transition: 1s;
+    opacity: 1;
+}
+.AniB-text-whatwedo{
+    transition: 1s;
+    opacity: 0;
+}
+
+.title {
+    color:#ec400a;
+    margin: 20px;
+    text-align: center;
+    font-family: osb;
+    font-size: 60px;
+    top: -200px;
+    left: 50px;
+    position: absolute;
+    
+}
+.text-whatwedo p:nth-child(2){
+    font-size: 20px;
+    color: #282828;
+    position: absolute;
+    line-height: 1.8;
+    font-family: cl;
+    font-weight: bold;
+    
+}
+
+input{
+    display: none;
+}
+
+.slider{
+    width: 100%;
+    height: 340px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 3500px;
+    transition: left 1s;
+}
+.ContainerSlide{
+    width: 760px;
+    height: 340px;
+    background-color: rgb(255, 255, 255);
+    margin-right: 500px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.slide{
+    display: flex;
+    
+}
+.blockPic{
+    width: 380px;
+    height: 340px;
+    background-color:#ffffff;
+    z-index: 1;
+
+}
+
+.blockPic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.blockDetail{
+    width: 380px;
+    height: 340px;
+    background-color: #ec400a;
+    position: absolute;
+
+
+}
+.BDO{
+    transition: 2s;
+        margin-left: 380px !important;
+}
+
+.BDB{
+    transition: 2s;
+    margin-left: 0 !important;
+}
+
+.blockDetail p:nth-child(1){
+    font-family: osb;
+    font-size: 30px;
+    padding-left: 20px;
+    color: #ffffff;
+}
+
+.blockDetail p:nth-child(2){
+    font-family: cl;
+    line-height: 1.8;
+    font-size: 20px;
+    margin-top: -20px;
+    padding: 20px;
+    color: #ffffff;
+
+}
+
+.blockDetail button{
+    position: absolute;
+    width: auto;
+    height: auto;
+    font-size: 12px;
+    margin-top: 50%;
+    margin-left: 140px;
+    bottom: 20px;
+    border-style: none;
+    font-family: osb;
+    border-radius: 1.5vw;
+    padding: 10px;
+    color: #ffffff;
+    background-color: #2188b9;
+}
+
+.blockDetail button:hover{
+    cursor: pointer;
+    background-color: #282828;
+    transition: 0.5s;
+}
+
+/* css for manual slide navigation*/
+
+.navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: flex-end;
+    bottom: 20px;
+    right: 80px;
+
+}
+.manual-btn{
+    border: 2px solid #ec400a;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s ;
+}
+.manual-btn:not(:last-child){
+    margin-right: 10px;
+}
+.active ,.manual-btn:hover{
+    background-color: #ec400a;
+
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: flex-end;
+    bottom: 20px;
+    right: 80px;
+
+}
+.navigation-auto label{
+    border: 2px solid #ec400a;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s ;
+}
+.Guide{
+    background-color: blueviolet; /*--------Guide------*/
+    width: 760px;
+    height: 340px;
+    position: absolute;
+    display: none;
+
+}
+.navigation-auto label:not(:last-child){
+    margin-right: 10px;
+}
+#radio1:checked ~ .slider{
+    transition: 2s;
+    margin-left: -500px;
+}
+#radio2:checked ~ .slider{
+    transition: 2s;
+    margin-left: -1240px;
+}
+
+#radio3:checked ~ .slider{
+    transition: 2s;
+    margin-left: -2119px;
+}
+#radio4:checked ~ .slider{
+    transition: 2s;
+    margin-left: -3000px;
+}
+#radio5:checked ~ .slider{
+    transition: 2s;
+    margin-left: -3880px;
+}
+#radio6:checked ~ .slider{
+    transition: 2s;
+    margin-left: -4760px;
+}
+#radio7:checked ~ .slider{
+    transition: 2s;
+    margin-left: -5639px;
+}
+
+/*BANNER ABOUT US AND Q&A*/
+.bannerABQ{
+    padding: 20px;
+    margin-top: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90vw;
+    height: 60%;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+.btnABQ{
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+.bannerABQ button{
+    border-style: none;
+    font-family: osb;
+    border-radius: 1.5vw;
+    padding: 10px;
+    color: #ffffff;
+    
+    background-color: #2188b9;   
+}
+.bannerABQ button:hover{
+    cursor: pointer;
+    background-color: #282828;
+
+}
+
+.blockAboutUs, .blockQA{
+    width: 40vw;
+    height: 700px;
+    background-color: #e3f1f6;
+    border-radius: 1.5vw;
+    text-align: center;
+    position: relative;
+
+}
+.blockAboutUs p:nth-child(1), .blockQA p:nth-child(1){
+    font-size: 5vw;
+    font-family: osb ;
+    color: #2188b9;
+
+}
+.blockAboutUs p:nth-child(2), .blockQA p:nth-child(2){
+    font-size: 1.5vw;
+    font-family: cl ;
+    color: #282828;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+
+

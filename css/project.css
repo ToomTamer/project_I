@@ -1,0 +1,167 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+.box-banner
+{
+    display: flex;
+    margin: 0;
+    width: 100%;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  
+}
+.banner-profile
+{
+    margin-top: 99px;
+    display: flex;
+    width: 90vw;
+    height: 35vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1.5vw;
+    background-color: #000000;
+}
+.banner-bg
+{
+    display: flex;
+    width: 90vw;
+    height: 35vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1.5vw;
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    opacity: 50%; 
+}
+.box-profile
+{
+    width: 90vw;
+    height: 35vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.5vw;
+    position: absolute;
+}
+.profile
+{
+    width: 20vw;
+    height: 20vw;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    margin-top: 5vw; 
+}
+.profile-text
+{
+    margin-top: 2vw;
+    width: fit-content;
+    height: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: ossb;
+    font-size: 2vw;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 5vw;   
+}
+.box-text
+{
+    margin-top: 3vw;
+    width: 90vw;
+    height: 3vw;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: osb;
+    color:  #ec400a;;
+    font-size: 2vw;
+    text-transform: uppercase;
+}
+    
+.grid-container 
+{
+    display: grid;
+    margin-top: 1.5vw;
+    width: 90vw;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns:  auto auto auto ;
+    grid-template-rows:  auto ;
+    grid-gap: 1.5vw;
+    display: flex;
+    flex-direction: row;
+}
+.grid-items
+{
+    border-color: transparent;
+    padding: 0;
+    height: 21.75vw;
+    width: fit-content;
+}
+.img-grid
+{
+    height: 21.75vw;
+    width: 29vw;
+    border-radius: 1.5vw;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
+.caption-bg
+{
+    position: absolute;
+    height: 21.75vw;
+    width: 29vw;
+    opacity: 0%;
+    border-radius: 1.5vw;
+    background-color: rgba(41, 41, 41, 0.5);
+    transition: .5s ease;
+}
+
+.caption
+{
+    display: flex;
+    right: 0;
+    bottom: 0;
+    font-family: osr;
+    font-weight: bold;
+    font-size: 1.5vw;
+    margin-right: 2vw;
+    margin-bottom: 2vw;
+    color: #ffffff;
+    position: absolute;
+    text-align: right;
+}
+
+.caption-bg:hover
+{
+    opacity: 100%;
+}
+
+@media (max-width: 900px) 
+{
+    .profile-text .box-text .caption .captionby
+    {
+        font-size: 16px;
+    }
+  .grid-container
+  {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .box-text
+  {
+      text-align: center;
+  }
+}

@@ -1,0 +1,160 @@
+*, *::after, *::before
+{
+    box-sizing: border-box;
+}
+.modal1,.modal2,.modal3,.modal4,.modal5,.modal6,.modal7,.modal8,.modal9
+{
+    display:none;
+    background:rgba(0, 0,0,.8);
+    position:fixed;
+    left:0;
+    top:0;
+    bottom:0;
+    height: 100vh;
+    width:100vw;
+    align-content: center;
+    justify-content: center;
+}
+.modal_body
+{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.modal_dialog
+{
+    vertical-align:middle;     
+    margin-top:10%;         
+}
+.modal_content
+{
+    background-color:var(--bw);
+    width: 800px;
+    height: 480px;
+    margin:auto;
+    position: relative;
+    animation: slideUp 0.3s ease-in-out;
+    border-radius: 20px;
+}
+.modal_header
+{
+    width: 800px;
+    height: 80px;
+    background-color:var(--deco);
+    padding: 20px;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: left;
+    border-radius: 20px 20px 0px 0px;
+}
+.modal_title
+{
+    text-align:center;
+    margin: 0;
+    color: #ffffff;
+    font-size: 30px;
+    font-family:  ave;   
+}
+.modal_close1,.modal_close2,.modal_close3,.modal_close4,.modal_close5,.modal_close6,.modal_close7,.modal_close8,.modal_close9
+{
+    color:black;
+    font-size:30px;
+    font-weight: bolder;
+    text-decoration:none;
+    position:absolute;
+    top:1rem;
+    right:2rem;
+}
+.modal_image
+{
+    display:inline-block;
+    float: left;
+    width:300px;
+    height:400px;
+    border-radius: 0px 0px 0px 20px;
+}
+.modal_text
+{
+    padding:50px;
+    line-height: 2;
+    color:var(--main);
+    font-family: ave;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+
+}
+.modal:target
+{
+    display:table;
+}
+
+@keyframes slideUp
+{
+    from
+    {
+        opacity: 0;
+        bottom: -200px;
+    }
+    to
+    {
+        opacity:1 ;
+        bottom: 0;
+    }
+}
+
+.contact
+{
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    font-family: Arial;
+    font-size: 15px;
+    border:solid 1px var(--deco);
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+span
+{
+    cursor: pointer;
+} 
+.a
+{
+    margin-top: 50px;
+}
+
+:root
+{
+    --icon: invert(47%) sepia(44%) saturate(813%) hue-rotate(154deg) brightness(90%) contrast(91%);
+}
+:root[data-theme='dark']
+{
+    --icon: none;
+}
+.iconface
+{
+
+    height: 30px;
+    filter: var(--icon);
+}
+.iconface:hover
+{
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+  
+}
+
+.iconig
+{
+    height: 30px;
+    filter: var(--icon);
+}
+
+.iconig:hover
+{
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
